@@ -1,9 +1,3 @@
-
-//Safety Armor
-ItemDisplay[(utp OR uui OR urs) MAG !ETH]: %GRAY%[%WHITE%Craft %CRAFTALVL%%GRAY%]%BLUE%%NAME% %TAN%[%SOCKETS%]%MAP%
-ItemDisplay[(utp OR uui OR urs) RARE !ETH]: %GRAY%[%WHITE%Craft %CRAFTALVL%%GRAY%]%YELLOW%%NAME% %TAN%[%SOCKETS%]%MAP%
-
-
 // ADev's Loot Filter for PD2, Dark Edition, Updated by DarkHumility. S8 v8.07
 //twitch.tv/ADevelopment
 //twitch.tv/DarkHumility
@@ -2367,3 +2361,7 @@ ItemDisplay[(ARMOR OR WEAPON) (!EXC OR !ELT) SOCK=1 NMAG CLVL>30]:
 ItemDisplay[(ARMOR OR WEAPON) (!EXC OR !ELT) NMAG CLVL>40]:
 ItemDisplay[(ARMOR OR WEAPON) INF]:
 ItemDisplay[(ARMOR OR WEAPON) CLVL>20]:
+
+//Safety Armor
+ItemDisplay[(utp OR uui OR urs) MAG !ETH]: %GRAY%[%WHITE%Safety Craft %CRAFTALVL%%GRAY%]%BLUE%%NAME% %TAN%[%SOCKETS%]%MAP%
+ItemDisplay[(utp OR uui OR urs) RARE !ETH]: %GRAY%[%WHITE%Safety Craft %CRAFTALVL%%GRAY%]%YELLOW%%NAME% %TAN%[%SOCKETS%]%MAP%
