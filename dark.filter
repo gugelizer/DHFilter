@@ -7,12 +7,15 @@ ItemDisplay[(ARMOR OR WEAPON) INF !RARE NMAG !UNI !SET !RW CLVL>69]:
 ItemDisplay[GOLD<1000 CLVL<65]:
 ItemDisplay[GOLD<5000 CLVL>64]:
 
+//VENDING ITEM
+ItemDisplay[NMAG (WP12 OR CL6 OR 7tk OR 7ta OR 7bk) !RW !ob5 !oba !obf PRICE>34999 DIFF>1]: %ORANGE%[$%PRICE%] %CONTINUE%
+ItemDisplay[NMAG (WP12 OR CL6 OR 7tk OR 7ta OR 7bk) !RW !ob5 !oba !obf PRICE>29999 DIFF=1]: %ORANGE%[$%PRICE%] %CONTINUE%
+ItemDisplay[NMAG (WP12 OR CL6 OR 7tk OR 7ta OR 7bk) !RW !ob5 !oba !obf PRICE>4999 DIFF=0]: %ORANGE%[$%PRICE%] %CONTINUE%
+
 //HP & MPs
 ItemDisplay[rvl]: %PURPLE%!%WHITE%R
 ItemDisplay[rvs CLVL<60]: %PURPLE%!%WHITE%r
 ItemDisplay[rvs CLVL>59]:
-
- 
 ItemDisplay[hp1 CLVL<16]: %RED%!%WHITE%Minor
 ItemDisplay[mp1 CLVL<16]: %BLUE%!%WHITE%Minor
 ItemDisplay[hp2 CLVL<19]: %RED%!%WHITE%Light
@@ -48,28 +51,33 @@ ItemDisplay[tpfs CLVL<16]: %WHITE%!%ORANGE%F
 ItemDisplay[tpfs CLVL>15]:
 ItemDisplay[tpfm CLVL<30]: %WHITE%!%ORANGE%E
 ItemDisplay[tpfm CLVL>29]:
-ItemDisplay[tpfl]: %WHITE%!%ORANGE%O
+ItemDisplay[tpfl CLVL<16]: %WHITE%!%ORANGE%O
+ItemDisplay[tpfl CLVL>15]:
 ItemDisplay[tpgs CLVL<16]: %WHITE%!%GREEN%S
 ItemDisplay[tpgs CLVL>15]:
 ItemDisplay[tpgm CLVL<30]: %WHITE%!%GREEN%C
 ItemDisplay[tpgm CLVL>29]:
-ItemDisplay[tpgl]: %WHITE%!%GREEN%R
+ItemDisplay[tpgl CLVL<16]: %WHITE%!%GREEN%R
+ItemDisplay[tpgl CLVL>15]:
 ItemDisplay[tpcs CLVL<16]: %WHITE%!%BLUE%C
 ItemDisplay[tpcs CLVL>15]:
 ItemDisplay[tpcm CLVL<30]: %WHITE%!%BLUE%Fro
 ItemDisplay[tpcm CLVL>29]:
-ItemDisplay[tpcl]: %WHITE%!%BLUE%Fre
+ItemDisplay[tpcl CLVL<16]: %WHITE%!%BLUE%Fre
+ItemDisplay[tpcl CLVL>15]:
 ItemDisplay[tpls CLVL<16]: %WHITE%!%YELLOW%C
 ItemDisplay[tpls CLVL>15]:
 ItemDisplay[tplm CLVL<30]: %WHITE%!%YELLOW%St
 ItemDisplay[tplm CLVL>29]:
-ItemDisplay[tpll]: %WHITE%!%YELLOW%Sh
+ItemDisplay[tpll CLVL<16]: %WHITE%!%YELLOW%Sh
+ItemDisplay[tpll CLVL>15]:
 
 //Quivers & Bolts
 ItemDisplay[(aqv OR cqv) RARE]: %NAME%
 ItemDisplay[(aqv OR cqv) MAG]: %NAME%
 ItemDisplay[(aqv OR cqv) NMAG CLVL>12]:
 ItemDisplay[(aqv OR cqv) MAG CLVL>90]:
+
 //Quest items
 ItemDisplay[bbb]: %GOLD%%NAME%%MAP%
 ItemDisplay[ass]: %GOLD%%NAME%%MAP%
@@ -88,6 +96,7 @@ ItemDisplay[tr2]: %GOLD%%NAME%%MAP%
 ItemDisplay[xyz]: %GOLD%%NAME%%MAP%
 ItemDisplay[ice]: %GOLD%%NAME%%MAP%
 ItemDisplay[std]: %RED%%NAME%%MAP%
+
 //PD2 Items
 ItemDisplay[imma]: %YELLOW%o %NAME%%YELLOW% o%MAP% {%WHITE%+ %BLUE%Jewel %NL%%WHITE% Imbue White to %BLUE%Magic Map}
 ItemDisplay[irma]: %YELLOW%ooo %NAME%%YELLOW% ooo%MAP% {%WHITE% Imbue White to %BLUE%Magic Map}
@@ -2104,6 +2113,8 @@ ItemDisplay[7st NMAG !ETH !INF (SOCK=0 OR SOCK=2 OR SOCK=4) CLVL<91]: %GRAY%%NAM
 //Exceptional bases (leveling insight etc)
 ItemDisplay[(9br OR 9st OR 9b7) ETH NMAG SOCK=4 CLVL<81]: %GRAY%[%WHITE%eth%GRAY%] %NAME% %TAN%[%SOCKETS%]
 ItemDisplay[(9br OR 9st OR 9b7) !ETH !INF NMAG SOCK=4 CLVL<81]: %GRAY%%NAME% %TAN%[%SOCKETS%]
+//A4 insight base
+ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs) NMAG ETH SOCK=4]: %GRAY%[%WHITE%eth%GRAY%] %GRAY%[%WHITE%a4%GRAY%] %NAME% %TAN%[%SOCKETS%]%MAP%
 ItemDisplay[9vo ETH NMAG (SOCK=0 OR SOCK=4) CLVL<81]: %GRAY%[%WHITE%eth%GRAY%] %NAME% %TAN%[%SOCKETS%]
 ItemDisplay[9vo !ETH !INF NMAG (SOCK=0 OR SOCK=4) CLVL<81]: %GRAY%%NAME% %TAN%[%SOCKETS%]
 //Ama Spears
